@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/sp_13"
+    android:background="@color/frag_bg"
+    android:id="@+id/item">
+
+    <ImageView
+        android:id="@+id/incident_img"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_margin="@dimen/sp_13"
+        android:src="@color/gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/incident_name"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:text="test测试事件名称"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/blue_edit"
+        android:layout_marginRight="@dimen/dp_13"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="@+id/incident_img"
+        app:layout_constraintLeft_toRightOf="@+id/incident_img"/>
+    <TextView
+        android:id="@+id/incident_stutas"
+        android:layout_width="0dp"
+        android:text="待处理"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/blue_edit"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintTop_toBottomOf="@+id/incident_name"
+        app:layout_constraintLeft_toLeftOf="@+id/incident_name"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/incident_time"
+        android:layout_width="0dp"
+        android:text="2019-8-9"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/blue_edit"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintTop_toBottomOf="@+id/incident_stutas"
+        app:layout_constraintLeft_toLeftOf="@+id/incident_name"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

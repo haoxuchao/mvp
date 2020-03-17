@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/white_bg_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.shehuan.niv.NiceImageView
+        android:id="@+id/user_img"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/sp_13"
+        android:src="@mipmap/hhmoren"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/top_view" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_13"
+        android:text="XXXX"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/user_img"
+        app:layout_constraintLeft_toRightOf="@+id/user_img"
+        app:layout_constraintTop_toTopOf="@+id/user_img" />
+
+    <TextView
+        android:id="@+id/tuijianren_txt"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/left_wtr_bg_20"
+        android:gravity="center"
+        android:text="推荐人:ADMIN"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/user_img"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/user_img" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/yellow_fff100"
+        app:layout_constraintBottom_toTopOf="@+id/balance_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/balance_tv"
+        app:layout_constraintRight_toRightOf="@+id/balance_tv" />
+
+    <TextView
+        android:id="@+id/balance_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="@string/balance"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toLeftOf="@+id/task_amount_tv"
+        app:layout_constraintTop_toBottomOf="@+id/user_img" />
+
+    <TextView
+        android:id="@+id/task_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/yellow_fff100"
+        app:layout_constraintBottom_toTopOf="@+id/task_amount_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/task_amount_tv"
+        app:layout_constraintRight_toRightOf="@+id/task_amount_tv" />
+
+    <TextView
+        android:id="@+id/task_amount_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/task_amount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/balance_tv"
+        app:layout_constraintRight_toLeftOf="@+id/referral_bonuses_tv"
+        app:layout_constraintTop_toTopOf="@+id/balance_tv" />
+
+    <TextView
+        android:id="@+id/referral_bonuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/yellow_fff100"
+        app:layout_constraintBottom_toTopOf="@+id/referral_bonuses_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/referral_bonuses_tv"
+        app:layout_constraintRight_toRightOf="@+id/referral_bonuses_tv" />
+
+    <TextView
+        android:id="@+id/referral_bonuses_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/referral_bonuses"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/task_amount_tv"
+        app:layout_constraintRight_toLeftOf="@+id/amount_frozen_tv"
+        app:layout_constraintTop_toTopOf="@+id/balance_tv" />
+
+    <TextView
+        android:id="@+id/amount_frozen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/yellow_fff100"
+        app:layout_constraintBottom_toTopOf="@+id/amount_frozen_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/amount_frozen_tv"
+        app:layout_constraintRight_toRightOf="@+id/amount_frozen_tv" />
+
+    <TextView
+        android:id="@+id/amount_frozen_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/amount_frozen"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/referral_bonuses_tv"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/balance_tv" />
+
+    <View
+        android:id="@+id/t_bottom_view"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/top_wtr_bg_20"
+        app:layout_constraintBottom_toBottomOf="@+id/top_view"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toRightOf="@+id/top_view" />
+
+    <TextView
+        android:id="@+id/scheduling_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:text="@string/scheduling"
+        android:textColor="@color/blue_2a5e"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="@+id/t_bottom_view"
+        app:layout_constraintLeft_toLeftOf="@+id/t_bottom_view"
+        app:layout_constraintTop_toTopOf="@+id/t_bottom_view" />
+
+    <View
+        android:id="@+id/shu_view"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/gray_9d9d"
+        app:layout_constraintBottom_toBottomOf="@+id/t_bottom_view"
+        app:layout_constraintLeft_toRightOf="@+id/scheduling_tv"
+        app:layout_constraintTop_toTopOf="@+id/t_bottom_view" />
+
+    <TextView
+        android:id="@+id/scheduling_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="0(单)"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduling_tv"
+        app:layout_constraintLeft_toRightOf="@+id/shu_view"
+        app:layout_constraintTop_toTopOf="@+id/scheduling_tv" />
+
+    <TextView
+        android:id="@+id/scheduling_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="0(元)"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduling_tv"
+        app:layout_constraintLeft_toRightOf="@+id/scheduling_num"
+        app:layout_constraintRight_toLeftOf="@+id/punctuality_tv"
+        app:layout_constraintTop_toTopOf="@+id/scheduling_tv" />
+
+    <TextView
+        android:id="@+id/punctuality_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="点率:0.018"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduling_tv"
+        app:layout_constraintRight_toRightOf="@+id/t_bottom_view"
+        app:layout_constraintTop_toTopOf="@+id/scheduling_tv" />
+
+    <TextView
+        android:id="@+id/team_management"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/team"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableTint="@color/blue_2a5e"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_13"
+        android:text="@string/team_management"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toBottomOf="@id/top_view" />
+
+    <TextView
+        android:id="@+id/order_management"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_height="@dimen/dp_35"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/order"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableTint="@color/blue_2a5e"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_13"
+        android:text="@string/order_management"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toBottomOf="@id/team_management" />
+
+    <TextView
+        android:id="@+id/resource_management"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/resources"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableTint="@color/blue_2a5e"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_13"
+        android:text="@string/resource_management"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toBottomOf="@id/order_management" />
+
+    <TextView
+        android:id="@+id/app_settings"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/settings"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableTint="@color/blue_2a5e"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_13"
+        android:text="@string/app_settings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@+id/top_view"
+        app:layout_constraintRight_toRightOf="@+id/top_view"
+        app:layout_constraintTop_toBottomOf="@id/resource_management" />
+</androidx.constraintlayout.widget.ConstraintLayout>

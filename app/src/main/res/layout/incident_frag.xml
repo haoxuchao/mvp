@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frag_bg">
+
+    <include layout="@layout/top_layout" />
+
+    <TextView
+        android:id="@+id/step_tv1"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="上报"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/step_tv2"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+    <TextView
+        android:id="@+id/step_stutas1"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@mipmap/green_radio"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toTopOf="@+id/step_tv1"
+        app:layout_constraintLeft_toLeftOf="@+id/step_tv1"
+        app:layout_constraintRight_toRightOf="@+id/step_tv1" />
+
+    <View
+        android:id="@+id/step_view1"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/green_437b"
+        app:layout_constraintBottom_toBottomOf="@+id/step_stutas1"
+        app:layout_constraintLeft_toRightOf="@+id/step_stutas1"
+        app:layout_constraintRight_toLeftOf="@+id/step_stutas2"
+        app:layout_constraintTop_toTopOf="@+id/step_stutas1" />
+
+    <TextView
+        android:id="@+id/step_tv2"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="转办"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/step_tv1"
+        app:layout_constraintRight_toLeftOf="@+id/step_tv3"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+    <TextView
+        android:id="@+id/step_stutas2"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@mipmap/green_radio"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toTopOf="@+id/step_tv2"
+        app:layout_constraintLeft_toLeftOf="@+id/step_tv2"
+        app:layout_constraintRight_toRightOf="@+id/step_tv2" />
+
+    <View
+        android:id="@+id/step_view2"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/green_437b"
+        app:layout_constraintBottom_toBottomOf="@+id/step_stutas2"
+        app:layout_constraintLeft_toRightOf="@+id/step_stutas2"
+        app:layout_constraintRight_toLeftOf="@+id/step_stutas3"
+        app:layout_constraintTop_toTopOf="@+id/step_stutas2" />
+
+    <TextView
+        android:id="@+id/step_tv3"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="处理"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/step_tv2"
+        app:layout_constraintRight_toLeftOf="@+id/step_tv4"
+        app:layout_constraintTop_toTopOf="@+id/step_tv1" />
+
+    <TextView
+        android:id="@+id/step_stutas3"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@mipmap/green_radio"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toTopOf="@+id/step_tv3"
+        app:layout_constraintLeft_toLeftOf="@+id/step_tv3"
+        app:layout_constraintRight_toRightOf="@+id/step_tv3" />
+
+    <View
+        android:id="@+id/step_view3"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/green_437b"
+        app:layout_constraintBottom_toBottomOf="@+id/step_stutas3"
+        app:layout_constraintLeft_toRightOf="@+id/step_stutas3"
+        app:layout_constraintRight_toLeftOf="@+id/step_stutas4"
+        app:layout_constraintTop_toTopOf="@+id/step_stutas3" />
+
+    <TextView
+        android:id="@+id/step_tv4"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="复查"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/step_tv3"
+        app:layout_constraintRight_toLeftOf="@+id/step_tv5"
+        app:layout_constraintTop_toTopOf="@+id/step_tv1" />
+
+    <TextView
+        android:id="@+id/step_stutas4"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@mipmap/green_radio"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toTopOf="@+id/step_tv4"
+        app:layout_constraintLeft_toLeftOf="@+id/step_tv4"
+        app:layout_constraintRight_toRightOf="@+id/step_tv4" />
+
+    <View
+        android:id="@+id/step_view4"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/green_437b"
+        app:layout_constraintBottom_toBottomOf="@+id/step_stutas4"
+        app:layout_constraintLeft_toRightOf="@+id/step_stutas4"
+        app:layout_constraintRight_toLeftOf="@+id/step_stutas5"
+        app:layout_constraintTop_toTopOf="@+id/step_stutas4" />
+
+    <TextView
+        android:id="@+id/step_tv5"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="完结"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintLeft_toRightOf="@+id/step_tv4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/step_tv1" />
+
+    <TextView
+        android:id="@+id/step_stutas5"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@mipmap/green_radio"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/step_tv5"
+        app:layout_constraintLeft_toLeftOf="@+id/step_tv5"
+        app:layout_constraintRight_toRightOf="@+id/step_tv5" />
+
+    <include
+        layout="@layout/report_frag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_tv1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/complaint_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_tv1">
+
+        <TextView
+            android:id="@+id/incident_complaint_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:gravity="center_vertical"
+            android:text="转办单位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/incident_complaint_unit"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginRight="@dimen/sp_13"
+            android:background="@drawable/edit_bg"
+            android:drawablePadding="@dimen/dp_20"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="请选择"
+            android:textColor="@color/blue_edit"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toRightOf="@+id/incident_complaint_unit_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/incident_complaint_unit_tv" />
+
+        <TextView
+            android:id="@+id/incident_complaint_opinion_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="转办意见"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incident_complaint_unit_tv" />
+
+        <EditText
+            android:id="@+id/incident_complaint_opinion"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginRight="@dimen/sp_13"
+            android:background="@drawable/edit_bg"
+            android:gravity="top|left"
+            android:padding="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="请输入转办意见"
+            android:textColor="@color/blue_edit"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toRightOf="@+id/incident_complaint_opinion_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/incident_complaint_opinion_tv" />
+
+        <TextView
+            android:id="@+id/complaint_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="转办"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cancellation_btn"
+            app:layout_constraintTop_toBottomOf="@+id/incident_complaint_opinion" />
+
+        <TextView
+            android:id="@+id/cancellation_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="注销"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toRightOf="@+id/complaint_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incident_complaint_opinion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dispose_constrain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_tv1">
+
+        <TextView
+            android:id="@+id/incident_dispose_results_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="处理结果"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/incident_dispose_results_edit"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginRight="@dimen/sp_13"
+            android:background="@drawable/edit_bg"
+            android:gravity="top|left"
+            android:padding="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="请输入处理结果"
+            android:textColor="@color/blue_edit"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toRightOf="@+id/incident_dispose_results_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/incident_dispose_results_tv" />
+
+        <TextView
+            android:id="@+id/incident_dispose_img_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="上传图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incident_dispose_results_edit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dispose_img_recycle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/incident_dispose_results_edit"
+            app:layout_constraintRight_toRightOf="@+id/incident_dispose_results_edit"
+            app:layout_constraintTop_toTopOf="@+id/incident_dispose_img_tv" />
+
+        <TextView
+            android:id="@+id/submit_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dispose_img_recycle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/review_constrain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_tv1">
+
+        <TextView
+            android:id="@+id/incident_review_opinions_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="复查意见"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/incident_review_opinions_edit"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginRight="@dimen/sp_13"
+            android:background="@drawable/edit_bg"
+            android:gravity="top|left"
+            android:padding="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="请输入复查意见"
+            android:textColor="@color/blue_edit"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toRightOf="@+id/incident_review_opinions_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/incident_review_opinions_tv" />
+
+        <TextView
+            android:id="@+id/incident_review_img_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="上传图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incident_review_opinions_edit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dispose_review_recycle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@+id/incident_review_opinions_edit"
+            app:layout_constraintRight_toRightOf="@+id/incident_review_opinions_edit"
+            app:layout_constraintTop_toTopOf="@+id/incident_review_img_tv" />
+
+        <TextView
+            android:id="@+id/pass_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="通过"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/veto_btn"
+            app:layout_constraintTop_toBottomOf="@+id/dispose_review_recycle" />
+
+        <TextView
+            android:id="@+id/veto_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="否决"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toRightOf="@+id/pass_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dispose_review_recycle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/end_constrain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_tv1">
+
+        <TextView
+            android:id="@+id/incident_end_opinions_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="完结意见"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/incident_end_opinions_edit"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginRight="@dimen/sp_13"
+            android:background="@drawable/edit_bg"
+            android:gravity="top|left"
+            android:padding="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="请输入完结意见"
+            android:textColor="@color/blue_edit"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toRightOf="@+id/incident_end_opinions_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/incident_end_opinions_tv" />
+
+        <TextView
+            android:id="@+id/handle_after_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="处理前"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incident_end_opinions_edit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/after_recycle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/incident_end_opinions_edit"
+            app:layout_constraintRight_toRightOf="@+id/incident_end_opinions_edit"
+            app:layout_constraintTop_toBottomOf="@+id/incident_end_opinions_edit" />
+
+        <TextView
+            android:id="@+id/handle_befor_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="处理后"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/after_recycle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/befor_recycle"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/after_recycle"
+            app:layout_constraintRight_toRightOf="@+id/after_recycle"
+            app:layout_constraintTop_toBottomOf="@+id/after_recycle" />
+
+        <TextView
+            android:id="@+id/end_pass_btn"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@mipmap/green_btn"
+            android:gravity="center"
+            android:text="通过"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/befor_recycle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

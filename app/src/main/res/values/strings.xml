@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">mvptest</string>
+    <string name="home_str">首页</string>
+    <string name="circle_str">圈子</string>
+    <string name="zm_str">掌牧</string>
+    <string name="market_str">集食</string>
+    <string name="mine_str">我的</string>
+    <string name="person_center">个人中心</string>
+    <string name="mine_center">我的</string>
+    <string name="title">标题</string>
+    <string name="scheduling">排单量</string>
+    <string name="balance">余额</string>
+    <string name="task_amount">任务金额</string>
+    <string name="referral_bonuses">推荐奖励</string>
+    <string name="amount_frozen">冻结金额</string>
+    <string name="team_management">团队管理</string>
+    <string name="order_management">订单管理</string>
+    <string name="resource_management">资源管理</string>
+    <string name="app_settings">应用设置</string>
+</resources>
